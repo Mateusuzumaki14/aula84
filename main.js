@@ -9,12 +9,12 @@ var roverimg="rover.png"
 var roverimgTag=""
 function add(){
     backgroundimgTag=new Image()
-    backgroundimgTag=uploadBackground;
+    backgroundimgTag.onload=uploadBackground;
     backgroundimgTag.src=backgroundimg
 
 
     roverimgTag=new Image()
-    roverimgTag=uploadRover;
+    roverimgTag.onload=uploadRover;
     roverimgTag.src=roverimg
 
 }
